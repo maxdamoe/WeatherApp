@@ -1,3 +1,45 @@
-* {
-    background-color: green;
+#weatherDashboard {
+    background-color: teal;
+}
+
+.row {
+    position: relative;
+    left:10%;
+    padding-bottom: 2%;
+}
+
+#titleText {
+    position: relative;
+    text-align: center;
+}
+
+
+#Instructions {
+    font-size: 30px;
+}
+
+
+#inputdiv {
+    width:300px;
+    
+}
+
+#inputkey {
+    text-align: center;
+    width:300px;
+}
+
+.searchButton {
+    width:300px;
+    background-color: royalblue;
+}
+
+
+#BIGBOX{
+    background-color: red;
+    width:837px;
+    height: 500px;
+    left:500px;
+    bottom:233px;
+    position: relative;
 }
