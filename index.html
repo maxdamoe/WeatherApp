@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Assets/style.css">
 </head>
-<body>
-    
+<body> 
+
+<div class="row" id="Heading">
+    <div class="col-10" id="weatherDashboard">
+        <h1 id="titleText"> Weather Dashboard</h1>
+    </div>
+</div>
+
+<div class="row" id="searchbox">
+    <div class="col-4">
+        <h1 id="Instructions"><b>Search For a City: </b></h1>
+    </div> 
+</div>
+
+<div class="row" id="inputarea">
+    <div id="inputdiv">
+        <fieldset>
+            <input id="inputkey" type="text" placeholder="Search">
+        </fieldset>
+    </div>
+</div>
+
+<div class="row" id="buttons">
+    <div class="searchButton">
+        <button class="searchButton" id="please"><p> Search </p></button>
+    </div>
+</div>
+
+<div class="row searchButton">
+    <div> 
+        <fieldset>
+           
+        </fieldset>
+
+    </div>
+</div>
+
+<div id="BIGBOX">
+    <h1>CITY</h1>
+</div>
+
+
 </body>
+<script src="./index.js"></script>
 </html>
