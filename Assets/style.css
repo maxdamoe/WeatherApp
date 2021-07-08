@@ -128,8 +128,14 @@
     text-align: center;
 }
 
-.searchHistory {
+#searchHistory {
     text-align: center;
     font-size: 30px;
-    
+    text-justify: distribute-all-lines;
+}
+
+#buttonDiv2 {
+    top:20px;
+    width:300px;
+    background-color: royalblue;
 }

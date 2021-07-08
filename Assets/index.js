@@ -1,5 +1,5 @@
 
-document.getElementById('searchHistory').innerText = localStorage.getItem('citySearched')
+
 
 //________________ API CALL CODE ____________
 
@@ -85,30 +85,47 @@ function callAPI(){
 const button = document.getElementById("button")
 const City = document.getElementById("CCITY")
 
-
+let neck = localStorage.getItem('searchHistory') 
+document.getElementById('searchHistoryy').value = neck
+document.getElementById('searchHistoryy').innerText = neck
 
 function searchCity(){
     localStorage.setItem('citySearched', City.value)
-    const Array = []
 
-    Array.push(City.value)
-
-    localStorage.setItem('searchHistory', Array)
-
-    console.log(Array)
+    localStorage.setItem('searchHistory', City.value)
     
     callAPI()
-    // callAPI2()
+    
     document.getElementById('chosenCity').innerText = 'Weather in ' + City.value
+    
 
 }
 
 button.addEventListener('click', () => searchCity())
 
-let neck = localStorage.getItem('searchHistory')
 
-console.log(neck)
+// console.log(neck)
 
+
+
+let searchFromStorage = document.getElementById('buttonDiv') 
+
+searchFromStorage.addEventListener('click', () => searchCityFromStorage())
+
+
+
+
+
+function searchCityFromStorage(){
+    
+  City.value = neck
+    // localStorage.setItem('searchHistory', City.value)
+    
+    callAPI()
+    
+    document.getElementById('chosenCity').innerText = 'Weather in ' + City.value
+
+}
 
 //________________ LOCAL STORAGE SEARCH CODE END ____________
 
