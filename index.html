@@ -24,9 +24,7 @@
 
 <div class="row" id="inputarea">
     <div id="inputdiv">
-        <fieldset>
-            <p id="CCITY" contenteditable="true">Search</p>
-        </fieldset>
+            <input type="text" id="CCITY" placeholder="Search City" contenteditable="true">
     </div>
 </div>
 
@@ -38,29 +36,88 @@
 
 <div class="row searchButton">
     <div> 
-        <fieldset>
-           
-        </fieldset>
+        <p id="searchHistory"></p>
 
     </div>
 </div>
 
 <div id="BIGBOX">
-    <h1>CITY</h1>
+    <h1 id="chosenCity"></h1>
+    <img id="icon0">
+
+    <div id=UV></div>
+    
+    <div class="date" id="date0">
+    </div>
+    <div class="temperature" id="temp0">
+    </div>
+    <div class="wind" id="wind0">
+    </div>
+    <div class="humidity" id="humidity0">
+    </div>
+    <div class="UV" id="UV1">
+
+    </div>   
 </div>
 
-<div id="BRO">
-    <h1>5-Day Forecast</h1>
+<div class="row" id="BRO">
     
-    <div class="dayWeather" id="Day1">   
+    <h1>5-Day Forecast</h1>
+    <div class="dayWeather" id="day1">
+        <div class="date" id="date1">
+        </div>
+        <div class="temperature" id="temp1">
+        </div>
+        <div class="wind" id="wind1">
+        </div>
+        <div class="humidity" id="humidity1">
+        </div>   
+        <div class="imageDiv"><img id="icon1"></div>
+    </div>
+
+    <div class="dayWeather">
+        <div class="date" id="date2">
+        </div>
+        <div class="temperature" id="temp2">
+        </div>
+        <div class="wind" id="wind2">
+        </div>
+        <div class="humidity" id="humidity2">
+        </div> 
+        <div class="imageDiv"><img id="icon2"></div>
     </div>
     <div class="dayWeather">
+        <div class="date" id="date3">
+        </div>
+        <div class="temperature" id="temp3">
+        </div>
+        <div class="wind" id="wind3">
+        </div>
+        <div class="humidity" id="humidity3">
+        </div> 
+        <div class="imageDiv"><img id="icon3"></div>
     </div>
     <div class="dayWeather">
+        <div class="date" id="date4">
+        </div>
+        <div class="temperature" id="temp4">
+        </div>
+        <div class="wind" id="wind4">
+        </div>
+        <div class="humidity" id="humidity4">
+        </div> 
+        <div class="imageDiv"><img id="icon4"></div>
     </div>
     <div class="dayWeather">
-    </div>
-    <div class="dayWeather">
+        <div class="date" id="date5">
+        </div>
+        <div class="temperature" id="temp5">
+        </div>
+        <div class="wind" id="wind5">
+        </div>
+        <div class="humidity" id="humidity5">
+        </div>
+        <div class="imageDiv"><img id="icon5"></div> 
     </div>
 
 </div>
@@ -68,5 +125,6 @@
 
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="../../Coding/WeatherApp/Assets/index.js"></script>
 </html>
