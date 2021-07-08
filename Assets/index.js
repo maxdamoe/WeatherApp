@@ -3,6 +3,7 @@
 
 //________________ API CALL CODE ____________
 
+let currentDay = moment().format('LL')
 
 function callAPI(){
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + City.value + '&units=imperial&appid=b5ab120171c8236c0b40722895f5f571')
@@ -96,7 +97,8 @@ function searchCity(){
     
     callAPI()
     
-    document.getElementById('chosenCity').innerText = 'Weather in ' + City.value
+
+    document.getElementById('chosenCity').innerText = 'Weather in ' + City.value + ' ' + currentDay
     
 
 }
@@ -123,7 +125,7 @@ function searchCityFromStorage(){
     
     callAPI()
     
-    document.getElementById('chosenCity').innerText = 'Weather in ' + City.value
+    document.getElementById('chosenCity').innerText = 'Weather in ' + City.value + ' ' + currentDay
 
 }
 
