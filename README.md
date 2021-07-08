@@ -3,6 +3,6 @@ Description: This is my weather app, It takes data from a weather API and allows
 If users refresh, they can search previously searched cities by click the button that displays search history. 
 
 
-![image](./Develop/Screenshot.png)
+![image](./Assets/Screenshot.png)
 
 [Link to deployed app](https://maxdamoe.github.io/CodingCalendar/)
